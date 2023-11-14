@@ -16,6 +16,46 @@ include('connection.php');
 <div class="container mt-3">
 <div class="row justify-content-center" id="content">
 
+<style>
+    body {
+      background-color: #66d183;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+	.card-title {
+		color: #f77ceb;
+	}
+
+    #loadmore {
+      margin-top: 20px;
+      background-color: #81d698;
+      color: #fff;
+      border: 1px solid #71d18b;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #loadmore:hover {
+      background-color: #87d69c;
+    }
+
+	.btn btn-primary{
+		color: #f77ceb;
+	}
+  </style>
+
 <?php 
 
 $sql="select * from comments limit 0,3";
